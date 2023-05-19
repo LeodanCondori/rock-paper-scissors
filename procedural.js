@@ -9,7 +9,6 @@ let isThereWinner = false;
 
 let wannaPlay = "";
 wannaPlay = prompt("Do you wanna play rock, papers scissors?(y/n): ").toLocaleLowerCase();
-console.log(wannaPlay);
 // this while code portion is for validating wannaplay variable
 while(wannaPlay !== "y" && wannaPlay !== "n"){
     console.log("not valid hitting, try again");
@@ -28,7 +27,7 @@ if (wannaPlay === "y"){
         //this while code portion is for validating option player
         while(optionPlayer !== 0 && optionPlayer !== 1 && optionPlayer !== 2){
             console.log("Not valid input, Try again!");
-            optionPlayer = parseInt(prompt("choose a number: "));
+            optionPlayer = parseInt(prompt("choose a number between 0 and 2: "));
         }
 
         let realPlayerOption = myHub[optionPlayer];
